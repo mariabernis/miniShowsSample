@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		831ED93F19F6BB47006CF654 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 831ED93E19F6BB47006CF654 /* main.m */; };
 		831ED94219F6BB47006CF654 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 831ED94119F6BB47006CF654 /* AppDelegate.m */; };
-		831ED94519F6BB47006CF654 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831ED94419F6BB47006CF654 /* ViewController.m */; };
+		831ED94519F6BB47006CF654 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831ED94419F6BB47006CF654 /* MainViewController.m */; };
 		831ED94819F6BB47006CF654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831ED94619F6BB47006CF654 /* Main.storyboard */; };
 		831ED94A19F6BB47006CF654 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831ED94919F6BB47006CF654 /* Images.xcassets */; };
 		831ED94D19F6BB47006CF654 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831ED94B19F6BB47006CF654 /* LaunchScreen.xib */; };
 		831ED95919F6BB47006CF654 /* MiniShowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831ED95819F6BB47006CF654 /* MiniShowsTests.m */; };
+		831ED96719F6BFB0006CF654 /* ShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 831ED96619F6BFB0006CF654 /* ShowCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		831ED93E19F6BB47006CF654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		831ED94019F6BB47006CF654 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		831ED94119F6BB47006CF654 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		831ED94319F6BB47006CF654 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		831ED94419F6BB47006CF654 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		831ED94319F6BB47006CF654 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		831ED94419F6BB47006CF654 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		831ED94719F6BB47006CF654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		831ED94919F6BB47006CF654 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		831ED94C19F6BB47006CF654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		831ED95219F6BB47006CF654 /* MiniShowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniShowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		831ED95719F6BB47006CF654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		831ED95819F6BB47006CF654 /* MiniShowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniShowsTests.m; sourceTree = "<group>"; };
+		831ED96519F6BFB0006CF654 /* ShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowCell.h; sourceTree = "<group>"; };
+		831ED96619F6BFB0006CF654 /* ShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,9 @@
 			children = (
 				831ED94019F6BB47006CF654 /* AppDelegate.h */,
 				831ED94119F6BB47006CF654 /* AppDelegate.m */,
-				831ED94319F6BB47006CF654 /* ViewController.h */,
-				831ED94419F6BB47006CF654 /* ViewController.m */,
-				831ED94619F6BB47006CF654 /* Main.storyboard */,
+				831ED96419F6BDE8006CF654 /* Model */,
+				831ED96319F6BDDE006CF654 /* Controllers */,
+				831ED96219F6BC43006CF654 /* Views */,
 				831ED94919F6BB47006CF654 /* Images.xcassets */,
 				831ED94B19F6BB47006CF654 /* LaunchScreen.xib */,
 				831ED93C19F6BB47006CF654 /* Supporting Files */,
@@ -117,6 +120,32 @@
 				831ED95719F6BB47006CF654 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		831ED96219F6BC43006CF654 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				831ED94619F6BB47006CF654 /* Main.storyboard */,
+				831ED96519F6BFB0006CF654 /* ShowCell.h */,
+				831ED96619F6BFB0006CF654 /* ShowCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		831ED96319F6BDDE006CF654 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				831ED94319F6BB47006CF654 /* MainViewController.h */,
+				831ED94419F6BB47006CF654 /* MainViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		831ED96419F6BDE8006CF654 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				831ED94519F6BB47006CF654 /* ViewController.m in Sources */,
+				831ED94519F6BB47006CF654 /* MainViewController.m in Sources */,
 				831ED94219F6BB47006CF654 /* AppDelegate.m in Sources */,
+				831ED96719F6BFB0006CF654 /* ShowCell.m in Sources */,
 				831ED93F19F6BB47006CF654 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +444,7 @@
 				831ED95E19F6BB47006CF654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		831ED95F19F6BB47006CF654 /* Build configuration list for PBXNativeTarget "MiniShowsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +453,7 @@
 				831ED96119F6BB47006CF654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
