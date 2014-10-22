@@ -23,8 +23,9 @@ static const int DEFAULT_SHOW_ID = 80379;
 		_showTitle = @"The Big Bang Theory";
 		_showOverview = @"Bla blah blah overview";
 		_showInfo = @"Season 9 Episode 4";
-		
-		
+		_showArt = [UIImage imageNamed:@"detail_bigbang_l"];
+		_showPoster = [UIImage imageNamed:@"detail_bigbang_p"];
+		_showBanner = [UIImage imageNamed:@"detail_bigbang_b"];		
 	}
 	return self;
 }
