@@ -14,6 +14,8 @@
 		831ED94A19F6BB47006CF654 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831ED94919F6BB47006CF654 /* Images.xcassets */; };
 		831ED95919F6BB47006CF654 /* MiniShowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831ED95819F6BB47006CF654 /* MiniShowsTests.m */; };
 		831ED96719F6BFB0006CF654 /* ShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 831ED96619F6BFB0006CF654 /* ShowCell.m */; };
+		8384D8A819F7A77A00F2D4ED /* detail_bigbang_l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8384D8A619F7A77A00F2D4ED /* detail_bigbang_l.jpg */; };
+		8384D8A919F7A77A00F2D4ED /* detail_bigbang_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8384D8A719F7A77A00F2D4ED /* detail_bigbang_p.jpg */; };
 		A7E8241919F799E70036D601 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E8241719F799E70036D601 /* LaunchScreen.xib */; };
 		A7E8241C19F7A27B0036D601 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E8241B19F7A27B0036D601 /* Show.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,8 @@
 		831ED95819F6BB47006CF654 /* MiniShowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniShowsTests.m; sourceTree = "<group>"; };
 		831ED96519F6BFB0006CF654 /* ShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowCell.h; sourceTree = "<group>"; };
 		831ED96619F6BFB0006CF654 /* ShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCell.m; sourceTree = "<group>"; };
+		8384D8A619F7A77A00F2D4ED /* detail_bigbang_l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = detail_bigbang_l.jpg; sourceTree = "<group>"; };
+		8384D8A719F7A77A00F2D4ED /* detail_bigbang_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = detail_bigbang_p.jpg; sourceTree = "<group>"; };
 		A7E8241819F799E70036D601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A7E8241A19F7A27B0036D601 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = SOURCE_ROOT; };
 		A7E8241B19F7A27B0036D601 /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = SOURCE_ROOT; };
@@ -89,6 +93,7 @@
 			children = (
 				831ED94019F6BB47006CF654 /* AppDelegate.h */,
 				831ED94119F6BB47006CF654 /* AppDelegate.m */,
+				8384D8A519F7A75800F2D4ED /* Resources */,
 				831ED96419F6BDE8006CF654 /* Model */,
 				831ED96319F6BDDE006CF654 /* Controllers */,
 				831ED96219F6BC43006CF654 /* Views */,
@@ -151,6 +156,15 @@
 				A7E8241B19F7A27B0036D601 /* Show.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8384D8A519F7A75800F2D4ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8384D8A619F7A77A00F2D4ED /* detail_bigbang_l.jpg */,
+				8384D8A719F7A77A00F2D4ED /* detail_bigbang_p.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E8241919F799E70036D601 /* LaunchScreen.xib in Resources */,
+				8384D8A919F7A77A00F2D4ED /* detail_bigbang_p.jpg in Resources */,
 				831ED94819F6BB47006CF654 /* Main.storyboard in Resources */,
+				8384D8A819F7A77A00F2D4ED /* detail_bigbang_l.jpg in Resources */,
 				831ED94A19F6BB47006CF654 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
