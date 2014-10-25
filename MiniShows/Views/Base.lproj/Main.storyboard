@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LP3-A7-ekk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LP3-A7-ekk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -9,6 +9,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LP3-A7-ekk" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tQA-35-hHO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -20,14 +21,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWS-bu-irJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438" y="356"/>
+            <point key="canvasLocation" x="715.5" y="340.5"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="MkS-uN-chp">
             <objects>
                 <tableViewController id="nRw-qQ-7fm" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" id="caG-AU-xgv">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -73,8 +74,14 @@
                             <outlet property="delegate" destination="nRw-qQ-7fm" id="3BO-n5-cU4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="E4M-l7-9wy"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <navigationItem key="navigationItem" id="E4M-l7-9wy">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="l2k-dC-ubf">
+                            <connections>
+                                <segue destination="k5e-LN-W8M" kind="presentation" id="zzr-8R-y0N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwD-Bg-P9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,7 +96,7 @@
                         <viewControllerLayoutGuide type="bottom" id="v0H-Uk-KYH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sai-DX-7Pq">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BNb-I4-4PH">
@@ -99,11 +106,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="403"/>
                                     </imageView>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E2j-TE-uJB">
-                                        <rect key="frame" x="0.0" y="404" width="179" height="45"/>
+                                        <rect key="frame" x="0.0" y="404" width="376" height="44"/>
                                         <items>
-                                            <barButtonItem title="Show" id="kGC-fA-0ll"/>
+                                            <barButtonItem title="Seen" id="kGC-fA-0ll"/>
                                             <barButtonItem style="plain" systemItem="flexibleSpace" id="IO2-8Z-6OP"/>
-                                            <barButtonItem title="Show" id="Oza-jq-9BS"/>
+                                            <barButtonItem title="+Info" id="Oza-jq-9BS"/>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="DYS-H5-IgA"/>
+                                            <barButtonItem title="Share" id="Shf-ea-7to"/>
                                         </items>
                                     </toolbar>
                                 </subviews>
@@ -149,11 +158,40 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSB-gc-kVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2781" y="340.5"/>
+            <point key="canvasLocation" x="1720.5" y="340.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h8M-4j-HOP">
+            <objects>
+                <viewController id="k5e-LN-W8M" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3K2-yr-ZO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dyc-hr-yyT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5hf-yY-tvX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acf-HC-ZlC">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="V5m-Xv-Vnm">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Q82-Yg-hcv"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oK1-Zh-ZFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720.5" y="1146.5"/>
         </scene>
     </scenes>
 </document>
