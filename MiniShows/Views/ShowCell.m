@@ -1,10 +1,3 @@
-//
-//  ShowCell.m
-//  MiniShows
-//
-//  Created by Maria Bernis on 21/10/14.
-//  Copyright (c) 2014 mariabernis. All rights reserved.
-//
 
 #import "ShowCell.h"
 
@@ -18,16 +11,29 @@
 
 @implementation ShowCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)setShow:(Show *)aShow
+{
+    if (!aShow) {
+        return;
+    }
+    _show = aShow;
+    
+    self.showTitleLabel.text = self.show.showTitle;
+    self.showDetailLabel.text = self.show.showInfo;
+    NSString *status = nil;
+    UIColor *statusColor = nil;
+    if (self.show.pendingWatch > 0) {
+        status = [NSString stringWithFormat:@"%ld behind", (long)self.show.pendingWatch];
+        statusColor = [UIColor redColor];
+    } else {
+        status = [NSString stringWithFormat:@"Up to date"];
+        statusColor = [UIColor lightGrayColor];
+    }
+    self.statusLabel.text = status;
+    self.statusLabel.textColor = statusColor;
+    self.showImageView.image = self.show.showPoster;
+    
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
-//- (void)updateCellForShow:(Show *)show {}
 
 @end
