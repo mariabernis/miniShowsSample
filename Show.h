@@ -18,5 +18,7 @@
 @property (nonatomic, strong) UIImage *showBanner;
 @property (nonatomic, strong) UIImage *showPoster;
 
+@property (nonatomic) NSInteger pendingWatch;
+
 
 @end
