@@ -40,6 +40,7 @@
 		832E6D1119FC2AC200AE1F6A /* shareButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 832E6CF919FC2AC200AE1F6A /* shareButton@2x.png */; };
 		8384D8A819F7A77A00F2D4ED /* detail_bigbang_l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8384D8A619F7A77A00F2D4ED /* detail_bigbang_l.jpg */; };
 		8384D8A919F7A77A00F2D4ED /* detail_bigbang_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8384D8A719F7A77A00F2D4ED /* detail_bigbang_p.jpg */; };
+		83DDFEB419FC352B00875324 /* Shows.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFEB319FC352B00875324 /* Shows.m */; };
 		A7E8241919F799E70036D601 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E8241719F799E70036D601 /* LaunchScreen.xib */; };
 		A7E8241C19F7A27B0036D601 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E8241B19F7A27B0036D601 /* Show.m */; };
 		A7E8241E19F7AA500036D601 /* detail_bigbang_b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7E8241D19F7AA500036D601 /* detail_bigbang_b.jpg */; };
@@ -96,6 +97,8 @@
 		832E6CF919FC2AC200AE1F6A /* shareButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shareButton@2x.png"; sourceTree = "<group>"; };
 		8384D8A619F7A77A00F2D4ED /* detail_bigbang_l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = detail_bigbang_l.jpg; sourceTree = "<group>"; };
 		8384D8A719F7A77A00F2D4ED /* detail_bigbang_p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = detail_bigbang_p.jpg; sourceTree = "<group>"; };
+		83DDFEB219FC352B00875324 /* Shows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shows.h; path = MiniShows/Shows.h; sourceTree = SOURCE_ROOT; };
+		83DDFEB319FC352B00875324 /* Shows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shows.m; path = MiniShows/Shows.m; sourceTree = SOURCE_ROOT; };
 		A7E8241819F799E70036D601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A7E8241A19F7A27B0036D601 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = SOURCE_ROOT; };
 		A7E8241B19F7A27B0036D601 /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = SOURCE_ROOT; };
@@ -204,6 +207,8 @@
 			children = (
 				A7E8241A19F7A27B0036D601 /* Show.h */,
 				A7E8241B19F7A27B0036D601 /* Show.m */,
+				83DDFEB219FC352B00875324 /* Shows.h */,
+				83DDFEB319FC352B00875324 /* Shows.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83DDFEB419FC352B00875324 /* Shows.m in Sources */,
 				A7E8241C19F7A27B0036D601 /* Show.m in Sources */,
 				831ED94519F6BB47006CF654 /* MainViewController.m in Sources */,
 				831ED94219F6BB47006CF654 /* AppDelegate.m in Sources */,
