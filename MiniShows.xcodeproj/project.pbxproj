@@ -45,6 +45,7 @@
 		A713F41B19FC6C810005CBB5 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = A713F41919FC6C810005CBB5 /* twitter.png */; };
 		A713F41C19FC6C810005CBB5 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A713F41A19FC6C810005CBB5 /* twitter@2x.png */; };
 		A713F41F19FC6EA90005CBB5 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A713F41E19FC6EA90005CBB5 /* CustomView.m */; };
+		A713F6D319FD4CEB008EBFF8 /* SevenSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A713F6D219FD4CEB008EBFF8 /* SevenSwitch.m */; };
 		A73A8E9519FD056200764CDC /* CircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A73A8E9419FD056200764CDC /* CircleButton.m */; };
 		A7E8241919F799E70036D601 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E8241719F799E70036D601 /* LaunchScreen.xib */; };
 		A7E8241C19F7A27B0036D601 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E8241B19F7A27B0036D601 /* Show.m */; };
@@ -65,8 +66,8 @@
 		831ED93919F6BB47006CF654 /* MiniShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		831ED93D19F6BB47006CF654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		831ED93E19F6BB47006CF654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		831ED94019F6BB47006CF654 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		831ED94119F6BB47006CF654 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		831ED94019F6BB47006CF654 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		831ED94119F6BB47006CF654 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		831ED94319F6BB47006CF654 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		831ED94419F6BB47006CF654 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		831ED94719F6BB47006CF654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +111,8 @@
 		A713F41A19FC6C810005CBB5 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
 		A713F41D19FC6EA90005CBB5 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		A713F41E19FC6EA90005CBB5 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		A713F6D119FD4CEB008EBFF8 /* SevenSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenSwitch.h; sourceTree = "<group>"; };
+		A713F6D219FD4CEB008EBFF8 /* SevenSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenSwitch.m; sourceTree = "<group>"; };
 		A73A8E9319FD056200764CDC /* CircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleButton.h; sourceTree = "<group>"; };
 		A73A8E9419FD056200764CDC /* CircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleButton.m; sourceTree = "<group>"; };
 		A7E8241819F799E70036D601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -158,8 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				A713F41519FC618E0005CBB5 /* Utilities */,
-				831ED94019F6BB47006CF654 /* AppDelegate.h */,
-				831ED94119F6BB47006CF654 /* AppDelegate.m */,
 				8384D8A519F7A75800F2D4ED /* Resources */,
 				831ED96419F6BDE8006CF654 /* Model */,
 				831ED96319F6BDDE006CF654 /* Controllers */,
@@ -173,6 +174,8 @@
 		831ED93C19F6BB47006CF654 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				831ED94019F6BB47006CF654 /* AppDelegate.h */,
+				831ED94119F6BB47006CF654 /* AppDelegate.m */,
 				831ED93D19F6BB47006CF654 /* Info.plist */,
 				831ED93E19F6BB47006CF654 /* main.m */,
 			);
@@ -272,6 +275,8 @@
 		A713F41519FC618E0005CBB5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A713F6D119FD4CEB008EBFF8 /* SevenSwitch.h */,
+				A713F6D219FD4CEB008EBFF8 /* SevenSwitch.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 				831ED93F19F6BB47006CF654 /* main.m in Sources */,
 				A713F41419FC519D0005CBB5 /* OptionsViewController.m in Sources */,
 				A73A8E9519FD056200764CDC /* CircleButton.m in Sources */,
+				A713F6D319FD4CEB008EBFF8 /* SevenSwitch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -250,6 +250,7 @@
                                 <items>
                                     <navigationItem title="SETTINGS" id="V5m-Xv-Vnm">
                                         <barButtonItem key="leftBarButtonItem" image="closeButton.png" id="Q82-Yg-hcv">
+                                            <inset key="imageInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                             <color key="tintColor" red="0.32194811105728149" green="0.89478415250778198" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="backButtonPressed:" destination="k5e-LN-W8M" id="AAN-bw-6qP"/>
@@ -318,42 +319,6 @@
                                 <color key="textColor" red="0.32194811105728149" green="0.89478415250778198" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Knm-UT-dRo">
-                                <rect key="frame" x="310" y="174" width="51" height="31"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="0.32194811105728149" green="0.89478415250778198" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r3h-Sy-ktV">
-                                <rect key="frame" x="310" y="218" width="51" height="31"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="0.32194811105728149" green="0.89478415250778198" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="04D-o4-ixo">
-                                <rect key="frame" x="310" y="262" width="51" height="31"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="0.32194811105728149" green="0.89478415250778198" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QK1-NI-l3n">
-                                <rect key="frame" x="310" y="306" width="51" height="31"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="0.32194811105728149" green="0.89478415250778198" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b1h-hs-CBw">
-                                <rect key="frame" x="310" y="350" width="51" height="31"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="0.32194811105728149" green="0.89478415250778198" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nrj-ch-7MT">
-                                <rect key="frame" x="310" y="394" width="51" height="31"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="onTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="0.32194811105728149" green="0.89478415250778198" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjH-k0-j5e">
                                 <rect key="frame" x="145" y="550" width="84" height="21"/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="12"/>
@@ -432,10 +397,48 @@
                                 <color key="textColor" red="0.32194811109999999" green="0.89478415249999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jKa-Yv-emC" customClass="SevenSwitch">
+                                <rect key="frame" x="295" y="182" width="64" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.48313140869140625" green="0.83513730764389038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bwD-OM-hxj" customClass="SevenSwitch">
+                                <rect key="frame" x="295" y="226" width="64" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.48313140869140625" green="0.83513730764389038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clA-1x-fX6" customClass="SevenSwitch">
+                                <rect key="frame" x="295" y="270" width="64" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.48313140869140625" green="0.83513730764389038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ci-EZ-P8O" customClass="SevenSwitch">
+                                <rect key="frame" x="295" y="314" width="64" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.48313140869140625" green="0.83513730764389038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fyg-TX-r2f" customClass="SevenSwitch">
+                                <rect key="frame" x="295" y="358" width="64" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.48313140869140625" green="0.83513730764389038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6L-I4-nwg" customClass="SevenSwitch">
+                                <rect key="frame" x="295" y="402" width="64" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.48313140869140625" green="0.83513730764389038" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97244364023208618" green="0.97260981798171997" blue="0.97243314981460571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outletCollection property="sevenSwitches" destination="jKa-Yv-emC" id="a7y-gh-MWJ"/>
+                        <outletCollection property="sevenSwitches" destination="bwD-OM-hxj" id="QPF-Mj-WUT"/>
+                        <outletCollection property="sevenSwitches" destination="clA-1x-fX6" id="X1Z-PN-Awh"/>
+                        <outletCollection property="sevenSwitches" destination="1Ci-EZ-P8O" id="yZ7-hU-XQX"/>
+                        <outletCollection property="sevenSwitches" destination="Fyg-TX-r2f" id="j2a-81-xGn"/>
+                        <outletCollection property="sevenSwitches" destination="w6L-I4-nwg" id="V2I-Iq-zd2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oK1-Zh-ZFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

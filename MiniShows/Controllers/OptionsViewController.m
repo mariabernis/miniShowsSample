@@ -7,12 +7,31 @@
 //
 
 #import "OptionsViewController.h"
+#import "SevenSwitch.h"
 
 @interface OptionsViewController ()
+@property (strong, nonatomic) IBOutletCollection(SevenSwitch) NSArray *sevenSwitches;
 
 @end
 
 @implementation OptionsViewController
+
+- (void)setupSwitches{
+	[self.sevenSwitches enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+		SevenSwitch *s = (SevenSwitch *)obj;
+		s.thumbTintColor = s.tintColor;
+		s.onTintColor = [UIColor colorWithRed:0xD2 / 255.0
+										green:0xD7 / 255.0
+										 blue:0xD3 / 255.0
+										alpha:1.0];
+		s.shadowColor = [UIColor clearColor];
+		s.borderColor = [UIColor colorWithRed:0x41 / 255.0
+										green:0x75 / 255.0
+										 blue:0x05 / 255.0
+										alpha:1.0];
+	}];
+	
+}
 
 - (IBAction)backButtonPressed:(id)sender {
 	[self dismissViewControllerAnimated:YES completion:NULL];
@@ -30,6 +49,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self setupSwitches];
 }
 
 - (void)didReceiveMemoryWarning {
