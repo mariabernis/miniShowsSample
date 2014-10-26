@@ -42,6 +42,9 @@
 		8384D8A919F7A77A00F2D4ED /* detail_bigbang_p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8384D8A719F7A77A00F2D4ED /* detail_bigbang_p.jpg */; };
 		83DDFEB419FC352B00875324 /* Shows.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFEB319FC352B00875324 /* Shows.m */; };
 		A713F41419FC519D0005CBB5 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A713F41319FC519D0005CBB5 /* OptionsViewController.m */; };
+		A713F41B19FC6C810005CBB5 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = A713F41919FC6C810005CBB5 /* twitter.png */; };
+		A713F41C19FC6C810005CBB5 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A713F41A19FC6C810005CBB5 /* twitter@2x.png */; };
+		A713F41F19FC6EA90005CBB5 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = A713F41E19FC6EA90005CBB5 /* CustomView.m */; };
 		A7E8241919F799E70036D601 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7E8241719F799E70036D601 /* LaunchScreen.xib */; };
 		A7E8241C19F7A27B0036D601 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E8241B19F7A27B0036D601 /* Show.m */; };
 		A7E8241E19F7AA500036D601 /* detail_bigbang_b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7E8241D19F7AA500036D601 /* detail_bigbang_b.jpg */; };
@@ -102,6 +105,10 @@
 		83DDFEB319FC352B00875324 /* Shows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shows.m; sourceTree = "<group>"; };
 		A713F41219FC519D0005CBB5 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
 		A713F41319FC519D0005CBB5 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		A713F41919FC6C810005CBB5 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		A713F41A19FC6C810005CBB5 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
+		A713F41D19FC6EA90005CBB5 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		A713F41E19FC6EA90005CBB5 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		A7E8241819F799E70036D601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A7E8241A19F7A27B0036D601 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
 		A7E8241B19F7A27B0036D601 /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
@@ -193,6 +200,8 @@
 				831ED94619F6BB47006CF654 /* Main.storyboard */,
 				831ED96519F6BFB0006CF654 /* ShowCell.h */,
 				831ED96619F6BFB0006CF654 /* ShowCell.m */,
+				A713F41D19FC6EA90005CBB5 /* CustomView.h */,
+				A713F41E19FC6EA90005CBB5 /* CustomView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +231,8 @@
 		8384D8A519F7A75800F2D4ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A713F41919FC6C810005CBB5 /* twitter.png */,
+				A713F41A19FC6C810005CBB5 /* twitter@2x.png */,
 				832E6CE219FC2AC200AE1F6A /* backButton.png */,
 				832E6CE319FC2AC200AE1F6A /* backButton@2x.png */,
 				832E6CE419FC2AC200AE1F6A /* closeButton.png */,
@@ -344,6 +355,7 @@
 				832E6D0C19FC2AC200AE1F6A /* seenButton.png in Resources */,
 				832E6CFC19FC2AC200AE1F6A /* closeButton.png in Resources */,
 				832E6D0A19FC2AC200AE1F6A /* menuButton.png in Resources */,
+				A713F41B19FC6C810005CBB5 /* twitter.png in Resources */,
 				832E6D1119FC2AC200AE1F6A /* shareButton@2x.png in Resources */,
 				832E6CFD19FC2AC200AE1F6A /* closeButton@2x.png in Resources */,
 				832E6D0D19FC2AC200AE1F6A /* seenButton@2x.png in Resources */,
@@ -362,6 +374,7 @@
 				832E6D0419FC2AC200AE1F6A /* infoButton.png in Resources */,
 				832E6D0B19FC2AC200AE1F6A /* menuButton@2x.png in Resources */,
 				832E6D0319FC2AC200AE1F6A /* info2Button@2x.png in Resources */,
+				A713F41C19FC6C810005CBB5 /* twitter@2x.png in Resources */,
 				832E6CFB19FC2AC200AE1F6A /* backButton@2x.png in Resources */,
 				832E6D0219FC2AC200AE1F6A /* info2Button.png in Resources */,
 				832E6D1019FC2AC200AE1F6A /* shareButton.png in Resources */,
@@ -392,6 +405,7 @@
 				831ED94519F6BB47006CF654 /* MainViewController.m in Sources */,
 				831ED94219F6BB47006CF654 /* AppDelegate.m in Sources */,
 				831ED96719F6BFB0006CF654 /* ShowCell.m in Sources */,
+				A713F41F19FC6EA90005CBB5 /* CustomView.m in Sources */,
 				831ED93F19F6BB47006CF654 /* main.m in Sources */,
 				A713F41419FC519D0005CBB5 /* OptionsViewController.m in Sources */,
 			);
