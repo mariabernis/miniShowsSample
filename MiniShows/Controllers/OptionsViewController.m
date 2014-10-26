@@ -14,6 +14,20 @@
 
 @implementation OptionsViewController
 
+- (IBAction)backButtonPressed:(id)sender {
+	[self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (IBAction)greenButtonPressed:(id)sender {
+}
+
+- (IBAction)yellowButtonPressed:(id)sender {
+}
+
+- (IBAction)purpleButtonPressed:(id)sender {
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
